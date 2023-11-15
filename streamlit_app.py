@@ -38,3 +38,8 @@ st.altair_chart(alt.Chart(df, height=700, width=700)
         color=alt.Color("idx", legend=None, scale=alt.Scale()),
         size=alt.Size("rand", legend=None, scale=alt.Scale(range=[1, 150])),
     ))
+
+st.markdown("This is another peace of text.")
+name = st.text_input(label="Name")
+
+st.markdown(name)
